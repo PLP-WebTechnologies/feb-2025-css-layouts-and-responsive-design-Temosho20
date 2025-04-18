@@ -1,0 +1,73 @@
+/* Global Stylea */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links li {
+  margin-right: 20px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Flexbox Section */
+.flex-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-item {
+  background-color: #F7F7F7;
+  padding: 20px;
+  margin: 10px;
+  flex-basis: 200px,
+}
+
+/*Grid Section*/
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.grid-item {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px){
+  .nav-links {
+    flex-direction: column;
+  }
+  .flex-section {
+    flex-direction: column;
+  }
+  .grid-section {
+    grid-teplate-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px){
+  padding: 0.5em;
+}
+.flex-item {
+  margin:5px;
+}
